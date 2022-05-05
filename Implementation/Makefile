@@ -1,5 +1,5 @@
 PROJ_NAME = string_to_ASCII 
-SRC = src/main.c src/string_to_ASCII.c 
+SRC = src/main.c src/string_to_ASCII.c src/test.c src/unity.c
 ifdef OS
 	RM = del /q
 	FixPath= $(subst /,\,$l)

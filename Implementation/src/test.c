@@ -10,6 +10,7 @@
  */
 
 #include "string_to_ASCII.h"
+#include "unity.h"
 void setUp()
 {
 }
@@ -18,17 +19,17 @@ void tearDown()
 {
 }
 
-void ascii(char* ptr,int len)
+void ascii_test()
 {
-    
-    TEST_ASSERT_EQUAL(757,ascii());
+    char* str="vivek";
+    TEST_ASSERT_EQUAL(255,ascii(str,5));
 }
 
 int test_main()
 {
     UNITY_BEGIN();
 
-    RUN_TEST(ascii);
+    RUN_TEST(ascii_test);
 
     return UNITY_END();
 }
